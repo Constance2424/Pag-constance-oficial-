@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Constance MC</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilos.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Panel lateral -->
+  <div class="panel-lateral" id="panel">
+    <ul>
+      <li><a href="#inicio" onclick="togglePanel()">Inicio</a></li>
+      <li><a href="#biografia" onclick="togglePanel()">Biografía</a></li>
+      <li><a href="#musica" onclick="togglePanel()">Música</a></li>
+      <li><a href="#contacto" onclick="togglePanel()">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- Barra superior -->
+  <nav class="barra">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#biografia">Biografía</a></li>
+      <li><a href="#musica">Música</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="menu-btn" onclick="togglePanel()">☰</button>
+  </nav>
+
+  <!-- Secciones -->
+  <section class="contenido" id="inicio" data-aos="fade-up">
+    <h1>Constance MC</h1>
+    <p>Bienvenido a mi espacio oficial. Rap, arte y calle en cada línea ,Rap real desde el corazón del barrio. Letras que dicen lo que muchos callan. Constance MC. Arte, calle y verdad en cada barra.
+.</p>
+  </section>
+
+ <section class="biografia" id="biografia" data-aos="fade-up">
+  <h2>Biografía</h2>
+  <div class="bio-contenido">
+    <img src="img/constance-bio.jpg" alt="Constance MC" class="bio-img" />
+    <div class="bio-texto">
+      <p>
+Constance MC: Voz cruda desde la calle, poesía real desde el alma
+
+Constance MC irrumpe en la escena como un portavoz de la calle, combinando crudeza lírica con una sensibilidad introspectiva poco común en el panorama actual. Su música no solo habla de la realidad que se vive en los barrios, sino que la transforma en arte. Con beats potentes y versos afilados, su estilo viaja entre el rap clásico y un sonido urbano moderno que no teme ser vulnerable ni contundente.
+
+Cada track es una declaración: de identidad, de lucha, de visión. Constance no busca complacer; busca conectar, despertar y representar. Su flow, cargado de verdad, conecta con quienes viven la vida con la misma intensidad con la que él la escribe.
+
+Más que un artista, es un cronista del presente con una lírica que duele, inspira y deja huella.
+</p>
+    </div>
+  </div>
+</section>
+
+  <section class="musica" id="musica" data-aos="fade-up">
+    <h2>Últimos Temas</h2>
+    <div class="galeria-musica">
+      <!-- Reemplaza VIDEO_ID por tus IDs -->
+      <a href="https://youtu.be/mLVCRsG2i_Q?si=IuE5nNQDQyR4Bt2h" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID1/mqdefault.jpg" alt="In The Matrix">
+      </a>
+      <a href="https://youtu.be/0YXRuAdOqmA?si=nkngV6rP85sobcYH" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID2/mqdefault.jpg" alt="Never Die">
+      </a>
+      <a href="https://youtu.be/764jCkjXiQc?si=H6hQckJuD-CYJHak" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID3/mqdefault.jpg" alt="Aquella Noche">
+      </a>
+      <a href="https://youtu.be/FHWPZyNzq3s?si=dejBbPu3ubaA5nqR" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID4/mqdefault.jpg" alt="La Suerte Absurda">
+      </a>
+      <a href="https://youtu.be/fHr-f-YTvCY?si=eJ6Z_iFv2K4RIXFr" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID5/mqdefault.jpg" alt="ZEN">
+      </a>
+    </div>
+  </section>
+
+  <section class="redes" id="contacto" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <div class="iconos-sociales">
+      <a href="https://instagram.com/constancemc" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://open.spotify.com/artist/tu-id" target="_blank"><i class="fab fa-spotify"></i></a>
+      <a href="https://youtube.com/@constancemc173" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    function togglePanel() {
+      document.getElementById("panel").classList.toggle("abierto");
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
+<section class="shows" id="shows">
+  <h2>Próximos Shows</h2>
+  <div class="shows-lista">
+    <div class="show">
+      <h3>Por definir</h3>
+      <p>Proximamente</p>
+    </div>
+    <div class="show">
+      <h3>Por definir</h3>
+      <p>Proximamente</p>
+    </div>
+    <div class="show">
+      <h3>Proximamente</h3>
+      <p>Por Definir</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,217 @@
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+h1, h2, nav a, .panel-lateral a {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Barra superior */
+.barra {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 2px solid #00ff88;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Panel lateral */
+.panel-lateral {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #1a1a1a;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.panel-lateral.abierto {
+  left: 0;
+}
+
+.panel-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel-lateral li {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.panel-lateral a {
+  color: #00ff88;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contenido h1 {
+  font-size: 3em;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.biografia, .musica, .redes {
+  background-color: #1e1e1e;
+}
+
+.musica h2, .redes h2, .biografia h2 {
+  color: #00ff88;
+}
+
+.galeria-musica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria-musica a img {
+  width: 280px;
+  border-radius: 10px;
+  border: 2px solid #00ff88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-musica a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* Redes Sociales */
+.iconos-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 2em;
+}
+
+.iconos-sociales a {
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconos-sociales a:hover {
+  color: #00ff88;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+.bio-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.bio-img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+.bio-texto {
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.shows {
+  background-color: #0f0f0f;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.shows h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5em;
+  color: #0f0;
+  margin-bottom: 30px;
+}
+
+.shows-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.show {
+  background-color: #1a1a1a;
+  border-left: 5px solid #0f0;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.show h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.show p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #ccc;
+}
